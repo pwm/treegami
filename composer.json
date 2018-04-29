@@ -1,0 +1,41 @@
+{
+    "name": "pwm/treegami",
+    "description": "A tree implementation that can be unfolded, mapped and folded.",
+    "type": "library",
+    "keywords": ["tree-folding", "catamorphism", "anamorphism"],
+    "homepage": "https://github.com/pwm/treegami",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zsolt Szende",
+            "email": "zs@szende.me"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.0",
+        "phpstan/phpstan": "^0.7.0",
+        "phpunit/phpunit": "^6.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pwm\\Treegami\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Pwm\\Treegami\\": "tests/unit/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "scripts": {
+        "phpcs": "vendor/bin/phpcs --standard=PSR2 --warning-severity=0 src",
+        "phpstan": "vendor/bin/phpstan analyse --ansi -l 7 src"
+    }
+}
