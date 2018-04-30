@@ -6,7 +6,7 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/25356a7f11c642ee8ac5/test_coverage)](https://codeclimate.com/github/pwm/treegami/test_coverage)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Treegami is a small library for mapping and folding trees of arbitrary shape. As programmers we often work with trees, either in the open or in hiding, eg. when the're camouflaging as a json document. Ultimately we want to work with these structures by transforming them and Treegami is here to help with that need. The name Treegami is a [portmanteau](https://en.wikipedia.org/wiki/Portmanteau) of the words tree and [origami](https://en.wikipedia.org/wiki/Origami).
+Treegami is a small library for mapping and folding trees of arbitrary shape. As programmers we often work with trees, either in the open or in hiding, eg. when the're camouflaging as a json document. We can transform these structures and extract data from them and Treegami is here to help with this. The name Treegami is a [portmanteau](https://en.wikipedia.org/wiki/Portmanteau) of the words tree and [origami](https://en.wikipedia.org/wiki/Origami).
 
 
 ## Table of Contents
