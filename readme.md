@@ -140,11 +140,11 @@ then mapping `addOne` over it results in:
 ```
 In turn, folding this tree with `add`, using the root value `2` as the seed value, results in: `2+3+4+5+6+7+8+9+10+11 = 65`.
 
-In Treegami the seed value for `fold` by default is the value of the root node and an empty tree means a tree with no children and null as the node value.
+In *Treegami* the seed value for `fold` by default is the value of the root node and an empty tree means a tree with no children and null as the node value.
 
-Depending in which order we combine the current value with the accumulated value in our fold function we get different traversal orders. Specifically, if we prepend the current value to the accumulated value we get preorder traversal, while if we append the current value to the accumulated value we get postorder traversal.
+Depending on which order we combine the current value with the accumulated value in our fold function we get different traversal orders. Specifically, if we prepend the current value to the accumulated value we get preorder traversal, while if we append the current value to the accumulated value we get postorder traversal.
 
-In general `fold` does not need to "collapse" the structure into some scalar value, like an integer. We can just as easily "fold" the structure into another structure. This is exactly how `map` works in Treegami, meaning that `map` is expressed via `fold`.
+In general `fold` does not need to "collapse" the structure into some scalar value, like an integer. We can just as easily "fold" the structure into another structure. This is exactly how `map` works in *Treegami*, meaning that `map` is expressed via `fold`.
 
 `unfold` on the other hand is the "opposite" (or dual, to use the correct terminology) of `fold`. It takes a function and a seed value and "unfolds" that seed value into a structure, in our case into a tree. What's important to understand is that the function that unfolds the seed returns a pair of values: a node in our tree and a list of seed values, that will be used for subsequent iterations of `unfold`, until it returns an empty list, essentially terminating the iteration.
 
