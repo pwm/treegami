@@ -155,6 +155,7 @@ For the curious and brave out there: `fold` is a [Catamorphism](https://en.wikip
 	$ vendor/bin/phpunit
 	$ composer phpcs
 	$ composer phpstan
+	$ composer infection
 
 ## Changelog
 

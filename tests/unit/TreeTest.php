@@ -22,6 +22,7 @@ final class TreeTest extends TestCase
                 new Tree(), // node is optional and defaults to null
             ]
         );
+
         self::assertInstanceOf(Tree::class, $tree);
     }
 
